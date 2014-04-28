@@ -7,8 +7,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="C:\Users\rayco_000\Projects\repositories\google_glass_first_steps\1.Helloworld" />
-            <option value="C:\Users\rayco_000\Projects\repositories\google_glass_first_steps\1.Helloworld\app" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
       </GradleProjectSettings>

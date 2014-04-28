@@ -65,6 +65,11 @@ public class CardsActivity extends Activity implements AdapterView.OnItemClickLi
         }
 
         @Override
+        public int getPosition(Object o) {
+            return 0;
+        }
+
+        @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
             View cardView;
             switch (i) {
@@ -84,21 +89,12 @@ public class CardsActivity extends Activity implements AdapterView.OnItemClickLi
             return cardView;
         }
 
-        @Override
-        public int findIdPosition(Object o) {
-            return 0;
-        }
-
-        @Override
-        public int findItemPosition(Object o) {
-            return 0;
-        }
     };
 
     private View getFirstCardView() {
         Card card = new Card(this);
         card.setText("Tarjeta simple de texto");
-        return card.toView();
+        return card.getView();
     }
 
     private View getSecondCardView() {
@@ -106,7 +102,7 @@ public class CardsActivity extends Activity implements AdapterView.OnItemClickLi
         card.setText("Tarjeta con imagen a la izquierda");
         card.setImageLayout(Card.ImageLayout.LEFT);
         card.addImage(R.drawable.audi);
-        return card.toView();
+        return card.getView();
     }
 
     private View getThirdCardView() {
@@ -114,7 +110,7 @@ public class CardsActivity extends Activity implements AdapterView.OnItemClickLi
         card.setText("Tarjeta con imagen al fondo");
         card.setImageLayout(Card.ImageLayout.FULL);
         card.addImage(R.drawable.opel);
-        return card.toView();
+        return card.getView();
     }
 
     private View getFourthCardView() {
@@ -124,7 +120,7 @@ public class CardsActivity extends Activity implements AdapterView.OnItemClickLi
         card.setImageLayout(Card.ImageLayout.LEFT);
         card.addImage(R.drawable.audi);
         card.addImage(R.drawable.opel);
-        return card.toView();
+        return card.getView();
     }
 
     @Override
