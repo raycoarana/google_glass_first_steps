@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">GoogleGlassFirstSteps_Demo4</string>
+    
+    <string name="trigger_show_my_card">show my card</string>
+    <string name="prompt_show_my_card">Say the content of your card...</string>
+</resources>
